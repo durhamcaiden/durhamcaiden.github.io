@@ -38,3 +38,16 @@ li {
     left: 20px;
     margin-bottom: 15px;
 }
+
+/* Two-column layout for interests page */
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
