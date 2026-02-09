@@ -38,10 +38,12 @@ li {
 
 /* Style only the original portfolio profile image */
 .profile-photo {
-    border: 3px solid #0527FC;
+    border: 3px solid #1e40af;
     border-radius: 12px;
     position: relative;
     left: 12px;
+    width: 280px;
+    height: auto;
 }
 
 /* Improve readability for blockquote and address */
