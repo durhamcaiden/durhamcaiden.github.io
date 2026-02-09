@@ -1,0 +1,83 @@
+/*
+Name: Caiden Durham
+Course: Lab 2 - Adding CSS to your Portfolio
+File: styles.css
+Date Developed: February 2026
+Description: External styles for portfolio pages.
+*/
+
+/* Base page styles */
+body {
+    margin: 10px;
+    width: 725px;
+    background-color: #f3f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+}
+
+/* Add consistent spacing to headings */
+h1,
+h2,
+h3 {
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+/* Add left and right paragraph padding */
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.5;
+}
+
+/* Add left padding for list items */
+li {
+    padding-left: 10px;
+    margin-bottom: 6px;
+}
+
+/* Style only the original portfolio profile image */
+.profile-photo {
+    border: 3px solid #1e40af;
+    border-radius: 12px;
+    position: relative;
+    left: 12px;
+}
+
+/* Improve readability for blockquote and address */
+blockquote {
+    margin: 10px;
+    padding: 10px;
+    background-color: #e8f0ff;
+    border-left: 4px solid #2563eb;
+}
+
+address {
+    margin-top: 12px;
+    font-style: normal;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+}
+
+/* Two-column layout for interests page */
+.columns {
+    display: flex;
+    gap: 16px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.section-card {
+    margin-bottom: 14px;
+    padding: 8px;
+    background-color: #f8fbff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
