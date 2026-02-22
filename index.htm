@@ -10,6 +10,7 @@ Description: Personal portfolio home page.
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Meta description -->
     <meta name="description" content="Caiden Durham personal portfolio resume">
@@ -20,11 +21,26 @@ Description: Personal portfolio home page.
     <!-- Page title -->
     <title>Caiden Durham Portfolio</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Main and SlickNav styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 
 <body>
+<div class="page-wrap">
+    <!-- Mobile menu target -->
+    <div id="mobile-menu-container"></div>
+
+    <!-- Desktop navigation -->
+    <nav id="menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="interests.htm">Interests</a></li>
+            <li><a href="work.htm">Work Experience</a></li>
+            <li><a href="education.htm">Education</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- Main heading -->
     <h1>Caiden Durham</h1>
@@ -33,7 +49,7 @@ Description: Personal portfolio home page.
     <h2>Personal Portfolio</h2>
 
     <!-- Image element -->
-   <img class="profile-photo" src="images/profile.jpg" alt="Photo of Caiden Durham" width="300">
+    <img class="profile-photo" src="images/profile.jpg" alt="Photo of Caiden Durham" width="300">
 
     <!-- Paragraph element -->
     <p>
@@ -63,9 +79,13 @@ Description: Personal portfolio home page.
 
         <!-- Inline elements -->
         <a href="https://www.siu.edu">www.siu.edu</a><br>
-        <a href="mailto:durhamcaiden@siu.edu">durhamcaiden@siu.edu</a>
+        <a href="mailto:durhamcaiden@github.io">durhamcaiden@github.io</a>
     </address>
+</div>
 
+<!-- Scripts -->
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/nav.js"></script>
 </body>
 </html>
-
