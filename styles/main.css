@@ -1,0 +1,201 @@
+/*
+Name: Caiden Durham
+Course: Lab 3 - Responsiveness & SlickNav
+File: main.css
+Date Developed: February 2026
+Date Tested: February 2026
+Description: Main responsive styles for all portfolio pages.
+*/
+
+/* Global reset and fluid layout */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background-color: #f3f8ff;
+}
+
+.page-wrap {
+    width: min(96%, 1100px);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3 {
+    padding: 10px;
+    margin: 0.2rem 0;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 1.55;
+}
+
+li {
+    padding-left: 10px;
+    margin-bottom: 6px;
+}
+
+/* Desktop navigation */
+#menu {
+    background: #1e3a8a;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+}
+
+#menu a:hover,
+#menu a:focus {
+    background: #1d4ed8;
+}
+
+/* Hide generated mobile menu on desktop */
+#mobile-menu-container {
+    display: none;
+}
+
+/* Profile image style only for home image */
+.profile-photo {
+    border: 3px solid #1e40af;
+    border-radius: 12px;
+    position: relative;
+    left: 12px;
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    margin: 10px;
+    padding: 10px;
+    background-color: #e8f0ff;
+    border-left: 4px solid #2563eb;
+}
+
+address {
+    margin-top: 12px;
+    font-style: normal;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+}
+
+/* Multi-column layouts */
+.columns {
+    display: flex;
+    gap: 16px;
+}
+
+.column {
+    flex: 1;
+    background-color: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.section-card {
+    margin-bottom: 14px;
+    padding: 8px;
+    background-color: #f8fbff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+/* Work/education utility cards */
+.card-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 320px;
+    background: #fff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #93c5fd;
+    border-radius: 6px;
+}
+
+.contact-form button {
+    width: 180px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #1d4ed8;
+    color: #fff;
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 900px) {
+    .page-wrap {
+        width: min(98%, 900px);
+    }
+
+    .columns {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    #mobile-menu-container {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        left: 0;
+    }
+}
