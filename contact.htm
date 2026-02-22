@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Name: Caiden Durham
+University: Southern Illinois University
+Date Developed: February 18, 2026
+Date Tested: February 18, 2026
+Description: Contact page for portfolio.
+-->
+
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caiden Durham contact page">
+    <meta name="keywords" content="Caiden Durham, contact">
+    <title>Caiden Durham - Contact</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+</head>
+<body>
+<div class="page-wrap">
+    <div id="mobile-menu-container"></div>
+    <nav id="menu" aria-label="Main navigation">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="interests.htm">Interests</a></li>
+            <li><a href="work.htm">Work Experience</a></li>
+            <li><a href="education.htm">Education</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact</h1>
+    <h2>Let’s Connect</h2>
+
+    <p>Please use the form below to share your name and message.</p>
+
+    <!-- Contact form layout -->
+    <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>
