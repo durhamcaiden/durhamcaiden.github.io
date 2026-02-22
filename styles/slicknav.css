@@ -1,0 +1,54 @@
+/*
+Name: Caiden Durham
+Course: Lab 3 - Responsiveness & SlickNav
+File: slicknav.css
+Date Developed: February 2026
+Date Tested: February 2026
+Description: Styles for SlickNav-style mobile responsive menu.
+*/
+
+.slicknav_menu {
+    background: #1e3a8a;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.slicknav_btn {
+    display: inline-block;
+    background: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.slicknav_nav {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    display: none;
+}
+
+.slicknav_nav.open {
+    display: block;
+}
+
+.slicknav_nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.slicknav_nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.slicknav_nav a:hover,
+.slicknav_nav a:focus {
+    background: #2563eb;
+}
