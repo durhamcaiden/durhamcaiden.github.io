@@ -3,85 +3,82 @@
 Name: Caiden Durham
 University: Southern Illinois University
 Date Developed: February 9, 2026
-Date Tested: February 9, 2026
-Description: Interests page with a responsive two-column layout.
+Date Tested: February 23, 2026
+Description: Interests page with responsive two-column layout.
 -->
-
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO description -->
     <meta name="description" content="Caiden Durham interests and activities">
+    <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, interests, projects, hobbies">
     <title>Caiden Durham - Interests</title>
-
-    <!-- Main and SlickNav styles -->
+    <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 <body>
 <div class="page-wrap">
+    <!-- Mobile nav container -->
     <div id="mobile-menu-container"></div>
-
+    <!-- Primary navigation -->
     <nav id="menu" aria-label="Main navigation">
         <ul>
             <li><a href="index.htm">Home</a></li>
             <li><a href="interests.htm">Interests</a></li>
             <li><a href="work.htm">Work Experience</a></li>
             <li><a href="education.htm">Education</a></li>
+            <li><a href="projects.htm">Projects</a></li>
+            <li><a href="activities.htm">Activities</a></li>
             <li><a href="contact.htm">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Page heading -->
+    <!-- Page headings -->
     <h1>My Interests</h1>
     <h2>What I Enjoy Learning and Building</h2>
 
+    <!-- Intro text -->
     <p>
         This page highlights activities and topics that I spend time on outside class projects.
         I enjoy balancing technical growth with hands-on teamwork and community involvement.
     </p>
 
-    <!-- Two-column layout with two sections in each column -->
+    <!-- Responsive columns -->
     <div class="columns">
         <div class="column">
+            <!-- Section card 1 -->
             <section class="section-card">
                 <h3>Web Development Projects</h3>
-                <p>
-                    I like designing clean websites and practicing HTML and CSS structure.
-                    I focus on creating pages that are easy to read, organized, and accessible.
-                </p>
+                <p>I like designing clean websites and practicing HTML and CSS structure.</p>
             </section>
 
+            <!-- Section card 2 -->
             <section class="section-card">
                 <h3>AI and Emerging Technology</h3>
-                <p>
-                    I am interested in artificial intelligence and how tools can support productivity,
-                    customer experiences, and responsible decision making.
-                </p>
+                <p>I am interested in AI tools that improve productivity and responsible decisions.</p>
             </section>
         </div>
 
         <div class="column">
+            <!-- Section card 3 -->
             <section class="section-card">
                 <h3>Campus and Community Involvement</h3>
-                <p>
-                    I enjoy group-based activities where I can collaborate, communicate clearly,
-                    and contribute to shared goals in clubs and student organizations.
-                </p>
+                <p>I enjoy collaboration and communication in clubs and student organizations.</p>
             </section>
 
+            <!-- Section card 4 -->
             <section class="section-card">
                 <h3>Career and Professional Growth</h3>
-                <p>
-                    I spend time improving interview skills, building a stronger portfolio,
-                    and learning tools that prepare me for internships and long-term career goals.
-                </p>
+                <p>I build portfolio projects and improve interview and internship preparation skills.</p>
             </section>
         </div>
     </div>
 </div>
 
+<!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
 <script src="js/nav.js"></script>
