@@ -23,7 +23,7 @@ body {
     padding: 10px;
 }
 
-/* spacing */
+/* Typography spacing */
 h1,
 h2,
 h3 {
@@ -79,7 +79,7 @@ li {
     display: none;
 }
 
-/* visual blocks */
+/* Shared visual blocks */
 .profile-photo {
     border: 3px solid #1e40af;
     border-radius: 12px;
@@ -126,6 +126,7 @@ address {
     border-radius: 6px;
 }
 
+/* Card grid for work/projects */
 .card-grid {
     display: flex;
     gap: 16px;
@@ -140,7 +141,7 @@ address {
     padding: 12px;
 }
 
-/* form styles */
+/* Contact form styles */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -168,14 +169,14 @@ address {
     color: #fff;
 }
 
-/* Media query 1 */
+/* Media query 1: large laptop */
 @media (max-width: 1100px) {
     .page-wrap {
         width: min(97%, 1000px);
     }
 }
 
-/* Media query 2 */
+/* Media query 2: tablet */
 @media (max-width: 900px) {
     .page-wrap {
         width: min(98%, 900px);
@@ -186,7 +187,7 @@ address {
     }
 }
 
-/* Media query 3 */
+/* Media query 3: small tablet */
 @media (max-width: 760px) {
     .columns {
         flex-direction: column;
@@ -197,7 +198,7 @@ address {
     }
 }
 
-/* Media query 4 */
+/* Media query 4: mobile */
 @media (max-width: 600px) {
     #menu {
         display: none;
@@ -217,4 +218,38 @@ address {
     .contact-form button {
         width: 100%;
     }
+}
+
+
+/* Lab 4 main graphic and media */
+.main-graphic {
+    display: block;
+    width: min(100%, 460px);
+    height: auto;
+    border-radius: 16px;
+    margin: 10px auto 14px;
+}
+
+#homeAudio {
+    width: 100%;
+    max-width: 420px;
+    margin: 6px 5px 12px;
+}
+
+.education-video {
+    display: block;
+    width: min(100%, 640px);
+    height: auto;
+    margin: 10px auto 14px;
+    border-radius: 10px;
+    background: #000;
+}
+
+.work-plain-image {
+    display: block;
+    width: min(100%, 220px);
+    height: auto;
+    margin: 8px 5px 12px;
+    border: none;
+    border-radius: 0;
 }
