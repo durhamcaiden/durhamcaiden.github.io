@@ -8,18 +8,19 @@ Date Tested: February 23, 2026
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- description -->
+    <!-- SEO description -->
     <meta name="description" content="Caiden Durham portfolio projects">
-    <!-- keywords -->
+    <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, projects, portfolio">
     <title>Caiden Durham - Projects</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 <body>
 <div class="page-wrap">
-    
+    <!-- Mobile nav container -->
     <div id="mobile-menu-container"></div>
     <!-- Primary navigation -->
     <nav id="menu" aria-label="Main navigation">
@@ -34,6 +35,9 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>Projects</h1>
     <h2>Portfolio Work and Build Examples</h2>
@@ -46,11 +50,11 @@ Date Tested: February 23, 2026
         </section>
         <section class="card">
             <h3>Course Web Exercises</h3>
-            <p>Completed HTML/CSS lab assignments.</p>
+            <p>Completed HTML/CSS lab assignments focused on structure, semantics, and layout.</p>
         </section>
         <section class="card">
             <h3>UI Practice</h3>
-            <p>Practiced creating clean sections, spacing systems, and consistency.</p>
+            <p>Practiced creating clean sections, spacing systems, and visual consistency.</p>
         </section>
     </div>
 </div>
@@ -58,6 +62,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
