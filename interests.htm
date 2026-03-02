@@ -9,18 +9,19 @@ Date Tested: February 23, 2026
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- description -->
+    <!-- SEO description -->
     <meta name="description" content="Caiden Durham interests and activities">
-    <!-- keywords -->
+    <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, interests, projects, hobbies">
     <title>Caiden Durham - Interests</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 <body>
 <div class="page-wrap">
-   
+    <!-- Mobile nav container -->
     <div id="mobile-menu-container"></div>
     <!-- Primary navigation -->
     <nav id="menu" aria-label="Main navigation">
@@ -35,6 +36,9 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>My Interests</h1>
     <h2>What I Enjoy Learning and Building</h2>
@@ -42,6 +46,7 @@ Date Tested: February 23, 2026
     <!-- Intro text -->
     <p>
         This page highlights activities and topics that I spend time on outside class projects.
+        I enjoy balancing technical growth with hands-on teamwork and community involvement.
     </p>
 
     <!-- Responsive columns -->
@@ -50,7 +55,7 @@ Date Tested: February 23, 2026
             <!-- Section card 1 -->
             <section class="section-card">
                 <h3>Web Development Projects</h3>
-                <p>I like designing websites and practicing HTML and CSS.</p>
+                <p>I like designing clean websites and practicing HTML and CSS structure.</p>
             </section>
 
             <!-- Section card 2 -->
@@ -64,13 +69,13 @@ Date Tested: February 23, 2026
             <!-- Section card 3 -->
             <section class="section-card">
                 <h3>Campus and Community Involvement</h3>
-                <p>I like collaboration and communication in clubs and student organizations.</p>
+                <p>I enjoy collaboration and communication in clubs and student organizations.</p>
             </section>
 
             <!-- Section card 4 -->
             <section class="section-card">
                 <h3>Career and Professional Growth</h3>
-                <p>I build portfolio projects and improve interview and internship skills.</p>
+                <p>I build portfolio projects and improve interview and internship preparation skills.</p>
             </section>
         </div>
     </div>
@@ -79,6 +84,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
