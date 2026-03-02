@@ -6,27 +6,28 @@ Date Tested: February 23, 2026
 Description: Personal portfolio home page.
  -->
  <html lang="en-US">
- <head>
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- description -->
-     <meta name="description" content="Caiden Durham personal portfolio resume">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO description -->
+    <meta name="description" content="Caiden Durham personal portfolio resume">
 
-     <!-- keywords -->
-     <meta name="keywords" content="Caiden Durham, personal portfolio, resume">
+    <!-- SEO keywords -->
+    <meta name="keywords" content="Caiden Durham, personal portfolio, resume">
 
-     <title>Caiden Durham Portfolio</title>
-    <!-- styles -->
+    <title>Caiden Durham Portfolio</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
+    <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
- </head>
- <body>
+</head>
+<body>
 
 <div class="page-wrap">
-    <!-- Mobile menu -->
+    <!-- Mobile menu target -->
     <div id="mobile-menu-container"></div>
     <!-- Desktop navigation -->
-   <nav id="menu" aria-label="Main navigation">
+    <nav id="menu" aria-label="Main navigation">
         <ul>
             <li><a href="index.htm">Home</a></li>
             <li><a href="interests.htm">Interests</a></li>
@@ -38,46 +39,57 @@ Description: Personal portfolio home page.
         </ul>
     </nav>
 
-    <!-- heading -->
-     <h1>Caiden Durham</h1>
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
 
-     <h2>Personal Portfolio</h2>
- 
+    <!-- Hero heading -->
+    <h1>Caiden Durham</h1>
+
+    <h2>Personal Portfolio</h2>
+
     <!-- Profile image -->
-    <img class="profile-photo" src="images/profile.jpg" alt="Photo of Caiden Durham" width="150">
+    <img class="profile-photo" src="images/profile.jpg" alt="Photo of Caiden Durham" width="300">
+
+    <!-- Home page autoplay audio (attempt) -->
+    <audio id="homeAudio" autoplay controls preload="auto">
+        <source src="audio/home-audio.mp3" type="audio/mpeg">
+        <source src="audio/home-tone.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
  
     <!-- Intro paragraph -->
-     <p>
-         This website is my personal portfolio and highlights my education,
-         experience, and interests in technology.
-     </p>
- 
-    <!-- statement -->
-    <blockquote>Education, Web Development, and Professional Growth</blockquote>
- 
-   <!-- strengths list -->
-     <ol>
-         <li>Web Development</li>
-         <li>Artificial Intelligence</li>
-         <li>Customer Service</li>
-     </ol>
- 
-    <!-- address -->
-     <address>
-         <strong>Contact Name:</strong> Caiden Durham<br>
-         <strong>University Address:</strong><br>
-         Southern Illinois University<br>
-         1263 Lincoln Drive<br>
-         Carbondale, IL 62901<br><br>
+    <p>
+        This website is my personal portfolio and highlights my education,
+        experience, and interests in technology.
+    </p>
 
-         <a href="https://www.siu.edu">www.siu.edu</a><br>
-         <a href="mailto:caiden.durham@siu.edu">caiden.durham@siu.edu</a>
-     </address>
+    <!-- Featured statement -->
+    <blockquote>Education, Web Development, and Professional Growth</blockquote>
+
+    <!-- Core strengths list -->
+    <ol>
+        <li>Web Development</li>
+        <li>Artificial Intelligence</li>
+        <li>Customer Service</li>
+    </ol>
+
+    <!-- Contact address -->
+    <address>
+        <strong>Contact Name:</strong> Caiden Durham<br>
+        <strong>University Address:</strong><br>
+        Southern Illinois University<br>
+        1263 Lincoln Drive<br>
+        Carbondale, IL 62901<br><br>
+
+        <a href="https://www.siu.edu">www.siu.edu</a><br>
+        <a href="mailto:durhamcaiden@github.io">durhamcaiden@github.io</a>
+    </address>
 </div>
- 
+
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
- </body>
- </html>
+</body>
+</html>
