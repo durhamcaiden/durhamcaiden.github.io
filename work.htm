@@ -8,18 +8,19 @@ Date Tested: February 23, 2026
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- description -->
+    <!-- SEO description -->
     <meta name="description" content="Caiden Durham work and occupational experience">
-    <!-- keywords -->
+    <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, work experience, occupational">
     <title>Caiden Durham - Work Experience</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 <body>
 <div class="page-wrap">
-    
+    <!-- Mobile nav container -->
     <div id="mobile-menu-container"></div>
     <!-- Primary navigation -->
     <nav id="menu" aria-label="Main navigation">
@@ -34,15 +35,21 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>Occupational / Work Experience</h1>
     <h2>Professional Skills and Roles</h2>
+
+    <!-- Additional work-page graphic without rollover/rounded effects -->
+    <img class="work-plain-image" src="images/image.png" alt="Work related graphic" width="220">
 
     <!-- Responsive work cards -->
     <div class="card-grid">
         <section class="card">
             <h3>Customer Service</h3>
-            <p>Provided support and communication in fast-paced environments.</p>
+            <p>Provided friendly support and clear communication in fast-paced environments.</p>
         </section>
 
         <section class="card">
@@ -52,7 +59,7 @@ Date Tested: February 23, 2026
 
         <section class="card">
             <h3>Professional Reliability</h3>
-            <p>Met deadlines, supported teammates, and maintained standards.</p>
+            <p>Met deadlines, supported teammates, and maintained quality standards.</p>
         </section>
     </div>
 </div>
@@ -60,6 +67,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
