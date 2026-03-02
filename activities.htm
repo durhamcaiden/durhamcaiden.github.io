@@ -8,18 +8,19 @@ Date Tested: February 23, 2026
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- description -->
+    <!-- SEO description -->
     <meta name="description" content="Caiden Durham activities and involvement">
-    <!-- keywords -->
+    <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, activities, clubs">
     <title>Caiden Durham - Activities</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
 </head>
 <body>
 <div class="page-wrap">
-    <!-- Mobile nav -->
+    <!-- Mobile nav container -->
     <div id="mobile-menu-container"></div>
     <!-- Primary navigation -->
     <nav id="menu" aria-label="Main navigation">
@@ -34,6 +35,9 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>Activities</h1>
     <h2>Campus and Community Involvement</h2>
@@ -43,11 +47,11 @@ Date Tested: February 23, 2026
         <div class="column">
             <section class="section-card">
                 <h3>Student Organizations</h3>
-                <p>Participate in student groups that focus on teamwork.</p>
+                <p>Participate in student groups that focus on networking and collaboration.</p>
             </section>
             <section class="section-card">
-                <h3>Volunteering</h3>
-                <p>Help with events and activities that help locals.</p>
+                <h3>Volunteer Support</h3>
+                <p>Assist with events and activities that benefit local community initiatives.</p>
             </section>
         </div>
         <div class="column">
@@ -57,7 +61,7 @@ Date Tested: February 23, 2026
             </section>
             <section class="section-card">
                 <h3>Skill Practice</h3>
-                <p>Improve communication and technical skills through projects.</p>
+                <p>Continue improving communication and technical skills through projects.</p>
             </section>
         </div>
     </div>
@@ -66,6 +70,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
