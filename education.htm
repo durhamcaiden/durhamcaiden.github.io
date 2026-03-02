@@ -15,6 +15,7 @@ Date Tested: February 23, 2026
     <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, education, SIU">
     <title>Caiden Durham - Education</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
@@ -36,9 +37,18 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>Education</h1>
     <h2>Academic Background and Growth</h2>
+
+    <!-- Embedded education video (autoplay + controls) -->
+    <video class="education-video" autoplay muted controls playsinline loop>
+        <source src="video/education-demo.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
 
     <!-- Responsive education columns -->
     <div class="columns">
@@ -59,12 +69,12 @@ Date Tested: February 23, 2026
             <!-- Column section 3 -->
             <section class="section-card">
                 <h3>Learning Goals</h3>
-                <p>Build stronger skills and a portfolio for internships.</p>
+                <p>Build stronger front-end skills and a portfolio for internships.</p>
             </section>
             <!-- Column section 4 -->
             <section class="section-card">
                 <h3>Professional Development</h3>
-                <p>Continue improving presentation, writing, and speech.</p>
+                <p>Continue improving presentation, writing, and project documentation skills.</p>
             </section>
         </div>
     </div>
@@ -73,6 +83,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
