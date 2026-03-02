@@ -15,6 +15,7 @@ Date Tested: February 23, 2026
     <!-- SEO keywords -->
     <meta name="keywords" content="Caiden Durham, contact">
     <title>Caiden Durham - Contact</title>
+    <link rel="shortcut icon" href="images/image.png" type="image/png">
     <!-- Shared styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/slicknav.css">
@@ -36,12 +37,15 @@ Date Tested: February 23, 2026
         </ul>
     </nav>
 
+    <!-- Main graphic with rollover effect -->
+    <img id="mainGraphic" class="main-graphic" src="images/profile.jpg" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+
     <!-- Page headings -->
     <h1>Contact</h1>
     <h2>Let's Connect</h2>
 
     <!-- Intro text -->
-    <p>Use the form for your name and message.</p>
+    <p>Please use the form below to share your name and message.</p>
 
     <!-- Contact form -->
     <form class="contact-form" action="#" method="post">
@@ -61,6 +65,7 @@ Date Tested: February 23, 2026
 <!-- Shared scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/jquery.slicknav.min.js"></script>
+<script src="js/rollover.js"></script>
 <script src="js/nav.js"></script>
 </body>
 </html>
