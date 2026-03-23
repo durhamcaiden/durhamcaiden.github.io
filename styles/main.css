@@ -4,7 +4,6 @@ Date Developed: February 2026
 Date Tested: February 2026
 */
 
-/* reset */
 * {
     box-sizing: border-box;
 }
@@ -252,4 +251,59 @@ address {
     margin: 8px 5px 12px;
     border: none;
     border-radius: 0;
+}
+
+
+/* Lab 5 portfolio table styles */
+.table-figure {
+    margin: 12px 5px 18px;
+}
+
+.table-figure figcaption {
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.table-wrap {
+    width: 100%;
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.portfolio-table caption {
+    caption-side: top;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+    border: 1px solid #2563eb;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.portfolio-table thead {
+    background: #dbeafe;
+}
+
+.portfolio-table tfoot {
+    background: #eff6ff;
+    font-weight: 600;
+}
+
+
+@media (max-width: 470px) {
+    .table-wrap {
+        overflow-x: auto;
+    }
+
+    .portfolio-table {
+        min-width: 760px;
+    }
 }
