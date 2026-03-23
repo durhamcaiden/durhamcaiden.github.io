@@ -5,9 +5,10 @@ Southern Illinois University
 Date Tested: February 23, 2026
 Description: Personal portfolio home page.
  -->
- <html lang="en-US">
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO description -->
     <meta name="description" content="Caiden Durham personal portfolio resume">
@@ -40,21 +41,22 @@ Description: Personal portfolio home page.
     </nav>
 
     <!-- Main graphic with rollover effect -->
-    <img id="mainGraphic" class="main-graphic" src="images/siu.png" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
+    <img id="mainGraphic" class="main-graphic" src="images/profile.png" alt="Main site graphic" onmouseover="swapMainGraphic(true)" onmouseout="swapMainGraphic(false)">
 
     <!-- Hero heading -->
     <h1>Caiden Durham</h1>
-
     <h2>Personal Portfolio</h2>
 
     <!-- Profile image -->
-    <img class="profile-photo" src="images/profile.jpg" alt="Photo of Caiden Durham" width="300">
+    <img class="profile-photo" src="images/profile.png" alt="Photo of Caiden Durham" width="300">
 
     <!-- Home page autoplay audio (attempt) -->
     <audio id="homeAudio" autoplay controls preload="auto">
         <source src="audio/home-audio.mp3" type="audio/mpeg">
+        <source src="audio/home-tone.wav" type="audio/wav">
+        Your browser does not support the audio element.
     </audio>
- 
+
     <!-- Intro paragraph -->
     <p>
         This website is my personal portfolio and highlights my education,
