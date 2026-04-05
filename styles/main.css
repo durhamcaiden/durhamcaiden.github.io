@@ -152,20 +152,48 @@ address {
 }
 
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     width: 100%;
     padding: 10px;
     border: 1px solid #93c5fd;
     border-radius: 6px;
 }
 
-.contact-form button {
+.radio-group {
+    border: 1px solid #dbeafe;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.form-actions input[type="submit"],
+.form-actions input[type="reset"] {
     width: 180px;
     padding: 10px;
     border: none;
     border-radius: 6px;
     background: #1d4ed8;
     color: #fff;
+    cursor: pointer;
+}
+
+.form-actions input[type="reset"] {
+    background: #64748b;
 }
 
 /* Media query 1: large laptop */
@@ -214,7 +242,12 @@ address {
         max-width: 300px;
     }
 
-    .contact-form button {
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions input[type="submit"],
+    .form-actions input[type="reset"] {
         width: 100%;
     }
 }
