@@ -4,8 +4,8 @@ Date Developed: February 2026
 Date Tested: February 2026
 mobile SlickNav-style menu.
 */
-document.addEventListener('DOMContentLoaded', function () {
-    buildSlickNav('#menu > ul', {
+$(document).ready(function () {
+    $('#menu > ul').slicknav({
         prependTo: '#mobile-menu-container',
         label: 'Menu'
     });
