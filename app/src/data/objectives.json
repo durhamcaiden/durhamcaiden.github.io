@@ -1,0 +1,43 @@
+{
+  "_comment": "EXAMPLE DATA ONLY. Replace the contents of this file with the official CompTIA exam objectives for whatever exam you are studying (download the objectives PDF/spreadsheet from comptia.org and transcribe the domains/objectives below). Keep the schema: { exam, domains: [ { id, name, weight, objectives: [ { id, text } ] } ] }. The '_comment' key itself is ignored by the app and can stay or go.",
+  "exam": "CompTIA A+ Core 1 (220-1101) — EXAMPLE SUBSET",
+  "domains": [
+    {
+      "id": "1.0",
+      "name": "Mobile Devices",
+      "weight": 15,
+      "objectives": [
+        {
+          "id": "1.2",
+          "text": "Compare and contrast the display components of mobile devices, including LCD, OLED, and digitizer technology."
+        }
+      ]
+    },
+    {
+      "id": "2.0",
+      "name": "Networking",
+      "weight": 20,
+      "objectives": [
+        {
+          "id": "2.6",
+          "text": "Explain common networking ports, protocols, and services, including how DHCP assigns an IP address to a client step by step."
+        },
+        {
+          "id": "2.8",
+          "text": "Compare and contrast wireless networking protocols and encryption standards, including WPA2 and WPA3."
+        }
+      ]
+    },
+    {
+      "id": "3.0",
+      "name": "Hardware",
+      "weight": 25,
+      "objectives": [
+        {
+          "id": "3.4",
+          "text": "Given a scenario, select and install storage devices, including the differences between SSD, HDD, and NVMe."
+        }
+      ]
+    }
+  ]
+}
